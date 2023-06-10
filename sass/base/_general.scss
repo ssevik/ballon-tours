@@ -1,0 +1,16 @@
+html {
+  font-size: rem(16);
+}
+
+body {
+  /* font-family: 'Inter', sans-serif; */
+  padding: rem(50);
+  color: $main-text-color;
+  background-color: $color;
+  font-family: "Lato", sans-serif;
+  font-size: rem(16);
+}
+
+.wrapper {
+  background-color: $main-bg-color;
+}
