@@ -1,0 +1,174 @@
+.tour {
+  padding-top: rem(100);
+  padding-bottom: rem(80);
+}
+
+.tour-title {
+  margin-bottom: rem(80);
+}
+
+.tour-list {
+  display: flex;
+  gap: rem(60);
+  margin-bottom: rem(80);
+}
+
+.tour-list__item {
+  width: calc((100% - 120px) / 3);
+  height: rem(500);
+  position: relative;
+  perspective: rem(1500);
+  -moz-perspective: rem(1500);
+
+  &:hover .side--front {
+      transform: rotateY(-180deg);
+    }
+  
+    &:hover .side--back {
+      transform: rotateY(0deg);
+    }
+}
+
+ 
+
+.tour-list__side {
+  height: rem(500);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: $btn-shadow;
+  border-radius: rem(5);
+  overflow: hidden;
+  transition: transform 300ms ease-in;
+  backface-visibility: hidden;
+
+ 
+}
+
+.side--front {
+  height: rem(500);
+  background-color: $color;
+}
+
+.side--back {
+  height: rem(500);
+  background: $gradient-card;
+  transform: rotateY(180deg);
+}
+
+.tour-list__img {
+  margin-bottom: rem(45);
+  height: rem(245);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: hard-light;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+}
+
+
+.img--1 {
+  background: $accent url(../img/tour/tour-1.webp);
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1340px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .img--1 {
+        background-image: $gradient-bg, url(../img/tour/tour-1@2x.webp);
+      }
+    }
+}
+
+.img--2 {
+    background: $accent url(../img/tour/tour-2.webp);
+    
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 1340px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .img--1 {
+        background-image: $gradient-bg, url(../img/tour/tour-2@2x.webp);
+      }
+    }
+}
+
+.img--3 {
+    background: $accent url(../img/tour/tour-3.webp);
+    
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 1340px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .img--1 {
+        background-image: $gradient-bg, url(../img/tour/tour-3@2x.webp);
+      }
+    }
+}
+
+.tour-list__title {
+  position: absolute;
+  top: rem(177);
+  right: 0;
+  color: $color;
+  text-align: right;
+  font-weight: 300;
+  font-size: rem(28);
+  line-height: rem(34);
+  letter-spacing: rem(2);
+}
+
+.tour-list__span {
+  padding: rem(10) rem(20) rem(4) rem(20);
+  background: $gradient-title;
+}
+
+.span--two {
+  position: absolute;
+  top: rem(32);
+  right: 0;
+  padding-bottom: rem(10);
+}
+
+.tour-list__descr {
+  margin: 0 auto;
+}
+
+.tour-list__text {
+  text-align: center;
+  font-weight: 700;
+  line-height: rem(19);
+  letter-spacing: rem(2);
+  text-decoration-line: underline;
+
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+}
+
+.tour-list__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tour-list__sum {
+  margin-bottom: rem(87);
+  color: $color;
+  text-align: center;
+  letter-spacing: rem(2);
+}
+
+.sum--price {
+  font-weight: 300;
+  line-height: rem(19);
+}
+
+.sum--text {
+  font-weight: 500;
+  font-size: rem(60);
+  line-height: rem(72);
+}
+
+.tour-button {
+  text-align: center;
+}

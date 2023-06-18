@@ -1,0 +1,40 @@
+.footer {
+  padding: rem(80) 0;
+  background-color: $accent-bg;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: rem(50);
+}
+
+.footer-logo__svg {
+  width: rem(120);
+  height: rem(150);
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: rem(50);
+}
+
+.footer-menu__link {
+  display: block;
+  color: $color;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 300;
+  line-height: rem(19);
+  letter-spacing: rem(2);
+  text-transform: uppercase;
+  transition: color 250ms ease-in, transform 250ms ease-in;
+
+  &:hover,&:focus {
+    color: $accent;
+    transform: rotate(5deg) scale(1.2);
+  }
+}

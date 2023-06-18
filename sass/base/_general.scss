@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  /* font-family: 'Inter', sans-serif; */
   padding: rem(50);
   color: $main-text-color;
   background-color: $color;
@@ -12,5 +11,17 @@ body {
 }
 
 .wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: rem(1340);
   background-color: $main-bg-color;
+  z-index: 0;
 }
+
+.container {
+  max-width: rem(1340);
+  padding: 0 rem(100);
+  margin: 0 auto;
+
+}
+

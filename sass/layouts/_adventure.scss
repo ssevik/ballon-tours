@@ -1,0 +1,54 @@
+.adventure {
+  padding: rem(216) 0;
+  background-image: $gradient-bg, url(../img/adventure/adventure-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: skewY(4deg); 
+  
+  & > * {
+    transform: skewY(-4deg);
+  }
+  }
+    
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 1340px),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .adventure {
+        background-image: $gradient-bg, url(../img/adventure/adventure-bg@2x.webp);
+      }
+}
+
+.adventure-list {
+  display: flex;
+  gap: rem(60);
+}
+
+.adventure-item {
+  padding: rem(25);
+  width: calc((100%  - 180px) / 4);
+  background-color: rgba($color, 0.8);
+  text-align: center;
+  border-radius: rem(5);
+  box-shadow: $btn-shadow;
+  transition: transform 250ms ease-in;
+
+  &:hover {
+    transform: translateY(rem(-15)) scale(1.1);
+  }
+}
+
+.adventure-item__svg {
+  margin-bottom: 24px;
+  width: 63px;
+  height: 62px;
+  fill: url(#gradient);
+}
+
+.gradient {
+  background: $bg-title;
+}
+
+.adventure-item__title {
+  margin-bottom: rem(10);
+}

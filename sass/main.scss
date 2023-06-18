@@ -1,4 +1,25 @@
-@import './utils/utils.scss';
-@import './base/base.scss';
-@import './components/components.scss';
-@import './layouts/layots.scss';
+@import './utils/function';
+@import './utils/variables';
+@import './utils/animete';
+@import './utils/mixin';
+
+@import './base/reset';
+@import './base/general';
+@import './base/typography';
+
+@import './components/btn';
+@import './components/btn-text';
+@import './components/bg-video';
+@import './components/form';
+
+@import './layouts/header';
+@import './layouts/about';
+@import './layouts/adventure';
+@import './layouts/tour';
+@import './layouts/feedback';
+@import './layouts/reservation';
+@import './layouts/footer';
+@import './layouts/mob-menu';
+
+
+

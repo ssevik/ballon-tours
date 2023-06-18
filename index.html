@@ -24,6 +24,32 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="mob-menu">
+        <input class="menu-toggle" id="toggle" type="checkbox" />
+        <label class="menu-btn" for="toggle"
+          ><span class="menu-btn__icon"></span
+        ></label>
+        <div class="mob-menu__bg"></div>
+        <nav class="mob-menu__nav">
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">ABOUT US</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">DISCOUNTS</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">BEST TOURS</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">PRICE CALCULATOR</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <header class="header">
         <a class="logo" href="./index.html">
           <svg class="logo__svg" aria-label="logo">
@@ -37,9 +63,417 @@
               >An unforgettable adventure awaits you</span
             >
           </h1>
-          <a class="btn btn--animeted" href="#">НАШ КАТАЛОГ</a>
+          <a class="btn btn--animeted" href="#">OUR CATALOG</a>
         </div>
       </header>
+      <main>
+        <section class="section about">
+          <div class="container">
+            <h2 class="title-section about__title">
+              INCREDIBLE FEELING OF FREEDOM
+            </h2>
+            <div class="about__box">
+              <div class="about__inner">
+                <ul class="about-list">
+                  <li class="about-list__item">
+                    <h3 class="title-card about-list__title">
+                      ALLOW YOURSELF TO HAVE AN ADVENTURE
+                    </h3>
+                    <p class="text-card about-list__text">
+                      The task of the organization, especially the further
+                      development of various forms of activity entails a process
+                      of implementation and modernization of appropriate
+                      conditions of activation. Thus, the beginning of the daily
+                      work on the formation of the position entails.
+                    </p>
+                  </li>
+                  <li class="about-list__item">
+                    <h3 class="title-card about-list__title">
+                      UP TO 6,000 METERS ABOVE SEA LEVEL
+                    </h3>
+                    <p class="text-card about-list__text">
+                      The task of the organization, especially the further
+                      development of various forms of activity entails a process
+                      of implementation and modernization of appropriate
+                      conditions of activation. Thus, the beginning of the daily
+                      work on the formation of the position entails.
+                    </p>
+                  </li>
+                </ul>
+                <a class="about__btn btn-text" href="#">Learn more &rarr;</a>
+              </div>
+              <div class="about__inner">
+                <div class="img-box">
+                  <img
+                    class="img-box__foto foto--n1"
+                    srcset="
+                      ./img/about/about-img-1.webp    1x,
+                      ./img/about/about-img-1@2x.webp 2x
+                    "
+                    src="./img/about/about-img-1.webp"
+                    alt="foto1"
+                  />
+                  <img
+                    class="img-box__foto foto--n2"
+                    srcset="
+                      ./img/about/about-img-2.webp    1x,
+                      ./img/about/about-img-2@2x.webp 2x
+                    "
+                    src="./img/about/about-img-2.webp"
+                    alt="foto2"
+                  />
+                  <img
+                    class="img-box__foto foto--n3"
+                    srcset="
+                      ./img/about/about-img-3.webp    1x,
+                      ./img/about/about-img-3@2x.webp 2x
+                    "
+                    src="./img/about/about-img-3.webp"
+                    alt="foto3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section adventure">
+          <div class="container">
+            <ul class="adventure-list">
+              <li class="adventure-item">
+                <svg class="adventure-item__svg" aria-label="">
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="3.65%" stop-color="#C3956A" />
+                    <stop offset="100%" stop-color="#A24F03" />
+                  </linearGradient>
+                  <use
+                    class="gradient"
+                    href="./img/sprite.svg#icon-adventure-icon-1"
+                  ></use>
+                </svg>
+                <h3 class="adventure-item__title title-card">ADVERTISEMENT</h3>
+                <p class="adventure-item__text text-card">
+                  The task of the organization, especially the further
+                  development of the various
+                </p>
+              </li>
+              <li class="adventure-item">
+                <svg class="adventure-item__svg" aria-label="">
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="3.65%" stop-color="#C3956A" />
+                    <stop offset="100%" stop-color="#A24F03" />
+                  </linearGradient>
+                  <use
+                    class="gradient"
+                    href="./img/sprite.svg#icon-adventure-icon-2"
+                  ></use>
+                </svg>
+                <h3 class="adventure-item__title title-card">ADVERTISEMENT</h3>
+                <p class="adventure-item__text text-card">
+                  The task of the organization, especially the further
+                  development of the various
+                </p>
+              </li>
+              <li class="adventure-item">
+                <svg class="adventure-item__svg" aria-label="">
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="3.65%" stop-color="#C3956A" />
+                    <stop offset="100%" stop-color="#A24F03" />
+                  </linearGradient>
+                  <use
+                    class="gradient"
+                    href="./img/sprite.svg#icon-adventure-icon-3"
+                  ></use>
+                </svg>
+                <h3 class="adventure-item__title title-card">ADVERTISEMENT</h3>
+                <p class="adventure-item__text text-card">
+                  The task of the organization, especially the further
+                  development of the various
+                </p>
+              </li>
+              <li class="adventure-item">
+                <svg class="adventure-item__svg" aria-label="">
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="3.65%" stop-color="#C3956A" />
+                    <stop offset="100%" stop-color="#A24F03" />
+                  </linearGradient>
+                  <use
+                    class="gradient"
+                    href="./img/sprite.svg#icon-adventure-icon-4"
+                  ></use>
+                </svg>
+                <h3 class="adventure-item__title title-card">ADVERTISEMENT</h3>
+                <p class="adventure-item__text text-card">
+                  The task of the organization, especially the further
+                  development of the various
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section tour">
+          <div class="container">
+            <h2 class="tour-title title-section">MOST POPULAR TOURS</h2>
+            <ul class="tour-list">
+              <li class="tour-list__item">
+                <div class="tour-list__side side--front">
+                  <div class="tour-list__img img--1"></div>
+                  <h3 class="tour-list__title">
+                    <span class="tour-list__span span--one">GROUPS</span>
+                    <br />
+                    <span class="tour-list__span span--two">TOURS</span>
+                  </h3>
+                  <ul class="tour-list__descr">
+                    <li class="tour-list__text">Groups of 6 and up</li>
+                    <li class="tour-list__text">Duration 2 hours</li>
+                    <li class="tour-list__text">In group 1 guide</li>
+                    <li class="tour-list__text">Flight range 6km</li>
+                    <li class="tour-list__text">Free souvenirs</li>
+                  </ul>
+                </div>
+                <div class="tour-list__side side--back">
+                  <div class="tour-list__box">
+                    <p class="tour-list__sum sum--price">FULL PRICE:</p>
+                    <p class="tour-list__sum sum--text">1000$</p>
+                    <a class="btn btn--animeted" href="#">REQUEST</a>
+                  </div>
+                </div>
+              </li>
+              <li class="tour-list__item">
+                <div class="tour-list__side side--front">
+                  <div class="tour-list__img img--2"></div>
+                  <h3 class="tour-list__title">
+                    <span class="tour-list__span span--one">PRIVATE</span>
+                    <br />
+                    <span class="tour-list__span span--two">TOURS</span>
+                  </h3>
+                  <ul class="tour-list__descr">
+                    <li class="tour-list__text">Groups of 6 and up</li>
+                    <li class="tour-list__text">Duration 2 hours</li>
+                    <li class="tour-list__text">In group 1 guide</li>
+                    <li class="tour-list__text">Flight range 6km</li>
+                    <li class="tour-list__text">Free souvenirs</li>
+                  </ul>
+                </div>
+                <div class="tour-list__side side--back">
+                  <div class="tour-list__box">
+                    <p class="tour-list__sum sum--price">FULL PRICE:</p>
+                    <p class="tour-list__sum sum--text">1800$</p>
+                    <a class="btn btn--animeted" href="#">REQUEST</a>
+                  </div>
+                </div>
+              </li>
+              <li class="tour-list__item">
+                <div class="tour-list__side side--front">
+                  <div class="tour-list__img img--3"></div>
+                  <h3 class="tour-list__title">
+                    <span class="tour-list__span span--one">SMOTHERING</span>
+                    <br />
+                    <span class="tour-list__span span--two">PLATES</span>
+                  </h3>
+                  <ul class="tour-list__descr">
+                    <li class="tour-list__text">Groups of 6 and up</li>
+                    <li class="tour-list__text">Duration 2 hours</li>
+                    <li class="tour-list__text">In group 1 guide</li>
+                    <li class="tour-list__text">Flight range 6km</li>
+                    <li class="tour-list__text">Free souvenirs</li>
+                  </ul>
+                </div>
+                <div class="tour-list__side side--back">
+                  <div class="tour-list__box">
+                    <p class="tour-list__sum sum--price">FULL PRICE:</p>
+                    <p class="tour-list__sum sum--text">1500$</p>
+                    <a class="btn btn--animeted" href="#">REQUEST</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="tour-button">
+              <a class="btn btn--animeted" href="#">REQUEST</a>
+            </div>
+          </div>
+        </section>
+        <section class="section feedback">
+          <div class="gradient-video"></div>
+          <video class="bg-video" autoplay muted loop>
+            <source src="./img/feedback/video.mp4" />
+            <source src="./img/feedback/video.webm" />
+          </video>
+          <div class="container">
+            <h2 class="feedback-title title-section">
+              FEEDBACK FROM OUR CUSTOMERS
+            </h2>
+            <ul class="feedback-list">
+              <li class="feedback-item">
+                <figure class="feedback-item__img">
+                  <img
+                    class="feedback-item__scale"
+                    srcset="
+                      ./img/feedback/feedback-1.webp    1x,
+                      ./img/feedback/feedback-1@2x.webp 2x
+                    "
+                    src="./img/feedback/feedback-1.webp"
+                    alt="ANTON RYABIN"
+                    width="167"
+                  />
+                  <figcaption class="feedback-item__name">
+                    ANTON RYABIN
+                  </figcaption>
+                </figure>
+                <div class="feedback-item__box">
+                  <h3 class="feedback-item__title title-card">
+                    I GOT A LOT OF IMPRESSIONS
+                  </h3>
+                  <p class="feedback-item__text text-card">
+                    The task of the organization, especially the further the
+                    development of various forms of activity entails a the
+                    process of implementation and modernization of appropriate
+                    conditions of activation. Thus Thus the beginning of the
+                    daily work of The formation of the position entails.
+                  </p>
+                </div>
+              </li>
+              <li class="feedback-item">
+                <figure class="feedback-item__img">
+                  <img
+                    class="feedback-item__scale"
+                    srcset="
+                      ./img/feedback/feedback-2.webp    1x,
+                      ./img/feedback/feedback-2@2x.webp 2x
+                    "
+                    src="./img/feedback/feedback-2.webp"
+                    alt="LISA FROLOVA"
+                    width="167"
+                  />
+                  <figcaption class="feedback-item__name">
+                    LISA FROLOVA
+                  </figcaption>
+                </figure>
+                <div class="feedback-item__box">
+                  <h3 class="feedback-item__title title-card">
+                    IT WAS GREAT AND UNFORGETTABLE
+                  </h3>
+                  <p class="feedback-item__text text-card">
+                    The task of the organization, especially the further the
+                    development of various forms of activity entails a the
+                    process of implementation and modernization of appropriate
+                    conditions of activation. Thus Thus the beginning of the
+                    daily work of The formation of the position entails.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="tour-button">
+              <a class="btn btn--animeted" href="#">REQUEST</a>
+            </div>
+          </div>
+        </section>
+        <section class="section reservation">
+          <div class="reservation-box">
+            <div class="reservation-form">
+              <form class="form">
+                <h2 class="reservation-form__title title-section">BOOK TOUR</h2>
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    id="name"
+                    type="text"
+                    placeholder="First Name Last Name"
+                    required
+                  />
+                  <label class="form__label" for="name"
+                    >Your first and last name</label
+                  >
+                </div>
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    id="email"
+                    type="email"
+                    placeholder="test@mail.com"
+                    required
+                  />
+                  <label class="form__label" for="email">Mailing Address</label>
+                </div>
+                <div class="form__group-field">
+                  <div class="form__group-radio">
+                    <input
+                      class="form__input-radio"
+                      id="tour-1"
+                      type="radio"
+                      name="cheked"
+                    />
+                    <label class="form__label-radio" for="tour-1"
+                      ><span class="radio-chek"></span>Group tour</label
+                    >
+                  </div>
+                  <div class="form__group-radio">
+                    <input
+                      class="form__input-radio"
+                      id="tour-2"
+                      type="radio"
+                      name="cheked"
+                    />
+                    <label class="form__label-radio" for="tour-2"
+                      ><span class="radio-chek"></span>Private tour</label
+                    >
+                  </div>
+                </div>
+                <button class="btn btn-brown" type="submit">REQUEST</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container container">
+          <a class="logo footer-logo" href="./index.html">
+            <svg class="logo__svg footer-logo__svg" aria-label="logo">
+              <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">ABOUT US</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">DISCOUNTS</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">BEST TOURS</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">PRICE CALCULATOR</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

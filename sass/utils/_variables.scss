@@ -2,6 +2,22 @@
 $main-text-color: #777777;
 $main-bg-color: #f7f7f7;
 $color: #ffffff;
+$color-black: #000000;
+$accent: #BA8554;
+$accent-dark: #A14F03;
+$accent-bg: #333333;
+
+$btn-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.4);
+
 $gradient-bg: linear-gradient(90.05deg,
         rgba(186, 133, 84, 0.7) 0.03%,
         rgba(1, 1, 1, 0.7) 99.94%);
+
+$gradient-title: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+
+$gradient-card: linear-gradient(120deg,
+                rgba(186, 133, 84, 0.7) 0.03%,
+                rgba(1, 1, 1, 0.7) 99.94%);
+        
+$bg-title:linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+

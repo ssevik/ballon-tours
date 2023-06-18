@@ -1,0 +1,141 @@
+.mob-menu {
+  position: relative;
+}
+
+.menu-toggle {
+  appearance: none;
+
+  &:checked ~ .mob-menu__bg {
+    transform: scale(100);
+  }
+
+  &:checked ~ .mob-menu__nav{
+    pointer-events: all;
+    width: 100%;
+    opacity: 1;
+  }
+
+  &:checked + .menu-btn .menu-btn__icon {
+    background-color: transparent;
+  }
+
+  &:checked+.menu-btn .menu-btn__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &:checked+.menu-btn .menu-btn__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  top: rem(75);
+  right: rem(60);
+  width: rem(60);
+  height: rem(60);
+  background-color: $color;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 60;
+  cursor: pointer;
+
+  &:hover .menu-btn__icon::before {
+    top: -10px;
+  }
+
+  &:hover .menu-btn__icon::after {
+    top: 10px;
+  }
+}
+
+.menu-btn__icon {
+  position: relative;
+  margin-top: 30px;
+
+  &,
+  &::before,
+  &::after {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  &::before,
+  &::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 250ms ease-in;
+  }
+
+  &::before {
+    top: -8px;
+  }
+  &::after {
+    top: 8px;
+  }
+}
+
+.mob-menu__bg {
+  position: absolute;
+  right: rem(70);
+  top: rem(90);
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  background-image: radial-gradient($accent, $accent-dark);
+  z-index: 50;
+  transition: transform 400ms ease-in;
+}
+
+.mob-menu__nav {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 55;
+  opacity: 0;
+  transition: opacity 900ms ease-in width 900ms ease-in;
+}
+
+.mob-menu__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mob-menu__item {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: rem(60);
+  }
+}
+
+.mob-menu__link {
+  display: block;
+  padding: 0 rem(10);
+  color: $color;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color 50%);
+  background-size: 220%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: rem(40);
+  line-height: rem(48);
+  letter-spacing: rem(5);
+  text-transform: uppercase;
+  transition: background-position 350ms ease-in, color 350ms ease-in, transform 350ms ease-in;
+
+  &:hover, &:active {
+    background-position: 100%;
+    color: $accent-dark;
+    transform: translateX(rem(10));
+  }
+
+}

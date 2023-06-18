@@ -10,7 +10,7 @@
   letter-spacing: 5px;
   text-transform: uppercase;
   border-radius: rem(50);
-  box-shadow: 0px rem(4) rem(4) rgba(0, 0, 0, 0.4);
+  box-shadow: $btn-shadow;
   transition: transform 250ms ease-in;
 
   &::after {
@@ -42,9 +42,20 @@
 }
 
 .btn--animeted {
-  animation-name: btnUp;
-  animation-duration: 500ms;
-  animation-delay: 300ms;
-  animation-timing-function: ease-in;
+  @include anim(btnUp, 500ms, 300ms, ease-in);
   animation-fill-mode: backwards;
+}
+
+.btn-brown {
+  color: $color;
+  background-color: $accent;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+
+  &::after {
+    background-color: $accent;
+  }
+  }
 }

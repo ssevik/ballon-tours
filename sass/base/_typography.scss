@@ -1,0 +1,31 @@
+.title-section {
+  background-image: $bg-title;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-weight: 900;
+  font-size: rem(36);
+  line-height: rem(43);
+  letter-spacing: rem(10);
+  text-transform: uppercase;
+  transition: transform 250ms ease-in, text-shadow 250ms ease-in;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: skewY(2deg) skewX(10deg) scale(1.1);
+    text-shadow: 0 rem(4) rem(4) rgba($color-black, .25);
+  }
+}
+
+.title-card {
+  font-weight: 700;
+  font-size: rem(20);
+  line-height: rem(24);
+  letter-spacing: rem(2);
+  text-transform: uppercase;
+}
+
+.text-card {
+  line-height: rem(22);
+  letter-spacing: rem(2);
+}

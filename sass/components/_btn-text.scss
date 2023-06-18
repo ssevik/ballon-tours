@@ -1,0 +1,22 @@
+.btn-text {
+  display: inline-block;
+  padding: rem(10);
+  color: inherit;
+  font-weight: 700;
+  line-height: rem(19);
+  letter-spacing: rem(2);
+  border-bottom: 1px solid $accent;
+  transition: color 250ms ease-in, background-color 250ms ease-in, box-shadow 250ms ease-in, transform 250ms ease-in;
+  
+   &:hover,
+   &:focus {
+    color: $color;
+    background-color: $accent;
+    box-shadow: $btn-shadow;
+    transform: translateY(-5px);
+   }
+
+   &:active {
+    transform: translateY(0);
+   }
+}
